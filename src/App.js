@@ -52,7 +52,7 @@ class App extends Component {
   }
 
   render() {
-    const style = {
+    const buttonStyle = {
       margin: '15px auto auto auto',
       background: 'white',
       font: 'inherit',
@@ -62,10 +62,10 @@ class App extends Component {
 
     return (
       <div className="App">
-        <button style={style} onClick={this.stateManipulator}>Manipulate All Usernames!</button>
+        <button style={buttonStyle} onClick={this.stateManipulator}>Manipulate All Usernames!</button>
         <UserOutput username={this.state.usernames[0].username}  />
         <UserInput changed={this.usernameChangeHandler} initialValue={this.state.usernames[0].username}></UserInput>
-        <UserOutput username={this.state.usernames[2].username} />
+        <UserOutput username={this.state.usernames[1].username} />
         <UserInput initialValue={this.state.usernames[1].username} />
         <UserOutput username={this.state.usernames[2].username} />
         <UserInput initialValue={this.state.usernames[2].username} />
@@ -82,7 +82,7 @@ class App extends Component {
           <li>Ensure that the new input entered by the user overwrites the old username passed to UserOutput</li>
           <li>Add two-way-binding to your input (in UserInput) to also display the starting username</li>
           <li>Add styling of your choice to your components/ elements in the components - both with inline styles and stylesheets</li>
-        </ol>       */}
+        </ol> */}
       </div>
     );
   }
